@@ -1,0 +1,276 @@
+$greyviolet : #c2a7b0;
+$darkviolet : #7a3866;
+$mustard : #f8b715;
+$skyblue : #b4dfdf;
+$redhot : #ef4c30;
+$mainfont : 'metropolismedium';
+$boldtitle : 'metropolisbold';
+
+@mixin animation($defineAni) {
+  -webkit-animation:$defineAni;
+  -moz-animation: $defineAni ;
+  -ms-animation: $defineAni;
+  animation : $defineAni;
+}
+
+body{
+  background-color: #fff;
+}
+#designHeader{
+  background-color: $darkviolet;
+  height: 137px;
+  width: 100%;
+  a{img{
+    width: 120px;
+    height: auto;
+    float:left;
+    padding: 15px;
+  }}
+  h1{
+    margin: 5% 15%;
+    position: absolute;
+    a{
+      color: $mustard;
+    }
+  }
+}
+section{
+    margin-top: -10px;
+}
+
+#developHeader{
+  background-color: $skyblue;
+  width: 100%;
+  height: 137px;
+  img{
+    width: 120px;
+    height: auto;
+    float:left;
+    padding: 15px;
+  }
+  h1{
+    margin: 5% 15%;
+    position: absolute;
+    a{
+      color: $redhot;
+    }
+  }
+}
+
+#projectList{
+  width: 50%;
+  clear: left;
+  float:left;
+  height: 800px;
+  background-color: #fff;
+  padding-top:0;
+
+    ul{
+      list-style-type: none;
+      margin: 12%;
+      padding-top: 5%;
+      height: 400px;
+      li{
+        text-align: center;
+        padding-top: 20px;
+        a{
+          text-decoration: none;
+        }
+      }
+  }
+  div{
+    padding: 15px;
+    a:first-child{
+      float: left;
+    }
+    a:nth-child(2){
+      float:right;
+    }
+  }
+.bottom{
+  margin-top: 15%;
+}
+}
+
+
+#projectImg{
+  width: 50%;
+  float: right;
+  img{
+    width:800px;
+  }
+a{
+  img{
+      width: 800px;
+    }
+}
+}
+
+#designFooter{
+  width: 100%;
+  height: 150px;
+  clear:both;
+  background-color: $darkviolet;
+  a{
+    color: $mustard;
+    float: left;
+    padding-top: 3%;
+    padding-left: 1%;
+  }
+  div{
+    float: right;
+    width: 350px;
+      ul{
+        list-style-type: none;
+        li{
+          display: inline;
+        a{
+          padding-right: 10px;
+        }
+        }
+      }
+  }
+}
+
+#developFooter{
+  width: 100%;
+  height: 135px;
+  clear:both;
+  background-color: $skyblue;
+  a{
+    color: $redhot;
+    float: left;
+    padding-top: 3%;
+    padding-left: 1%;
+  }
+  div{
+    float: right;
+    width: 350px;
+      ul{
+        list-style-type: none;
+        li{
+          display: inline;
+        a{
+          padding-right: 10px;
+        }
+        }
+      }
+  }
+}
+
+.hiddenLarge{
+  display:none;
+}
+
+@media only screen and (max-width:640px){
+  .wrapper{
+    width:640px;
+    margin: 0 auto;
+  }
+  .hiddenSmall{
+    display: none;
+  }
+header{
+    a{
+      width:100%;
+      img{
+        padding:0;
+      }
+    }
+    h1{
+     padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+    }
+    .hiddenLarge{
+      display:block;
+      width:100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+    #projectList{
+      display: none;
+    }
+    #projectImg{
+      width: 100%;
+     a{
+       width: 100%;
+       img{
+          width: 100%;
+        }
+     }
+    }
+    footer {
+      width: 640px;
+      padding: 0;
+      margin: 0;
+      a{
+        margin-top: 5%;
+        font-size: 25px;
+      }
+      div{
+        ul{
+          li{
+            a{
+              img{
+                width: 30px;
+                padding: 0;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media only screen and (max-width:960px){
+  .wrapper{
+    width:960px;
+    margin: 0 auto;
+  }
+  .hiddenSmall{
+    display: none;
+  }
+  header{
+    padding:0 20px;
+    a{
+      width:100%;
+      img{
+        padding:0;
+
+        width: 80px;
+      }
+    }
+    h1{
+     margin: 5% auto 0;
+      width: 100%;
+      font-size: 45px;
+    }
+    }
+    .hiddenLarge{
+      display:block;
+      width:100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+    #projectList{
+      display: none;
+    }
+    #projectImg{
+      width: 100%;
+     a{
+       img{
+          width: 100%;
+        }
+       }
+      }
+    footer {
+      width: 100%;
+
+      a{
+        margin-top: 5%;
+      }
+    }
+}

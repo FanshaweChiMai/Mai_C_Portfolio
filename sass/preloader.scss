@@ -1,0 +1,127 @@
+
+
+$greyviolet : #c2a7b0;
+$darkviolet : #7a3866;
+$mustard : #f8b715;
+$skyblue : #b4dfdf;
+$redhot : #ef4c30;
+$mainfont : 'metropolismedium';
+$boldtitle : 'metropolisbold';
+
+@mixin animation($defineAni) {
+  -webkit-animation:$defineAni;
+  -moz-animation: $defineAni ;
+  -ms-animation: $defineAni;
+  animation : $defineAni;
+}
+
+@mixin transition($changePanel){
+  -webkit-transition:$changePanel;
+  -moz-transition: $changePanel;
+  -ms-transition: $changePanel;
+  transition : $changePanel;
+}
+
+@mixin transform($change3d){
+  -webkit-transform:$change3d;
+  -moz-transform: $change3d;
+  -ms-transform : $change3d;
+  transform : $change3d;
+}
+#container{
+  width: 960px;
+}
+#greeting {
+  display: block;
+  margin: 35% auto ;
+  padding-left: 135px;
+  z-index:2000;
+
+    h2 {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //margin:20% 0 0 0 ;
+  font-size: 60px;
+  @include animation(showUp 6s ease-in);
+  }
+  p{
+    position: relative ;
+    width: 100%;
+    padding: 0;
+    margin-top: -2%;
+    font-size: 60px;
+  @include animation(slideIn 3s ease-in);
+  }
+  div{
+    position: absolute;
+    width: 100%;
+    margin: 0 27%;
+    width: 0;
+	  height: 0;
+	  border-left: 35px solid transparent;
+	  border-right: 35px solid transparent;
+	  border-top: 50px solid $darkviolet;
+    color: $darkviolet;
+    @include animation (moveUpDown 2s linear infinite);
+  }}
+
+@keyframes moveUpDown {
+  0% {
+    margin-top: 0px;
+  }
+
+  25% {
+    margin-top: -15px;
+  }
+
+  50% {
+    margin-top: 0px;
+  }
+
+  75% {
+    margin-top: -15px;
+  }
+
+  100% {
+    margin-top: 0px;
+}
+}
+
+@keyframes showUp {
+  0% {opacity:0;}
+    20% {opacity:1;}
+    100% {opacity:1;}
+
+}
+
+@keyframes slideIn {
+  0%{opacity: 0; top:40%;}
+ 20%{opacity: 0; top: 42%; }
+  70%{opacity: 0; top: 45%;}
+  100%{opacity:1;top: 50%;}
+
+}
+
+@media only screen and (max-width : 640px){
+  #container{
+    width: 640px;
+  }
+  #greeting{
+    h1{
+      font-size: 40px;
+      margin-top: 50%;
+    }
+    p{
+      font-size: 40px;
+    }
+    div{
+      padding: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 40px solid $darkviolet;
+      color: $darkviolet;
+    }
+  }
+}

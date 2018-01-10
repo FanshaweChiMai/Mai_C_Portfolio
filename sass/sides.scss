@@ -1,0 +1,297 @@
+
+
+$greyviolet : #c2a7b0;
+$darkviolet : #7a3866;
+$mustard : #f8b715;
+$skyblue : #b4dfdf;
+$redhot : #ef4c30;
+$mainfont : 'metropolismedium';
+$boldtitle : 'metropolisbold';
+
+@mixin animation($defineAni) {
+  -webkit-animation:$defineAni;
+  -moz-animation: $defineAni ;
+  -ms-animation: $defineAni;
+  animation : $defineAni;
+}
+
+
+#selection {
+  padding : 0 135px;
+  h3{
+    font-size: 35px;
+
+  }
+  div{
+    position: relative;
+
+
+  }
+  section {
+    width : 50%;
+    height: 820px;
+    text-align: center;
+    padding : 0;
+    margin: 0;
+   position: relative;
+      img{
+        width: 85px;
+        height: auto;
+        margin-top: 40%;
+      }
+    h2{
+      margin: 0;
+      span {
+        font-size: 65px;
+
+      }
+    }
+    p{
+      font-size: 20px;
+        }
+    div{
+      border: 5px solid;
+      padding: 15px;
+      text-align: center;
+      width: 300px;
+      height: 50px;
+      margin-left: 25%;
+      a{
+        text-decoration: none;
+        font-size: 35px;
+        margin: 0 11px;
+      }
+    }
+  }
+}
+
+.aboutMe {
+width: 200px;
+height: 50px;
+border : 5px solid $mustard;
+padding: 15px;
+font-size: 35px;
+text-align: center;
+float:right;
+ margin-top: -138px;
+a{
+  text-decoration: none;
+  color : $mustard;
+  margin: 0 32px;
+}
+}
+
+
+#designerSide {
+background-color: $darkviolet;
+color : $mustard;
+float: left;
+div{
+  border-color: $mustard;
+  a{
+    color: $mustard;
+  }
+}
+}
+
+#developerSide {
+background-color : $skyblue;
+color : $redhot;
+float : right;
+div{
+  border-color: $redhot;
+  a{
+    color: $redhot;
+  }
+}
+}
+
+
+footer {
+  padding : 20px 135px 80px;
+  clear:both;
+  div {
+    ul {
+      list-style-type : none;
+      li{
+        display : inline;
+        a{
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+      a{
+        text-decoration: none;
+        font-size: 35px;
+        color: $darkviolet;
+        float:right;
+      }
+}
+
+a:first-child{
+  float: left;
+}
+a:nth-child(2){
+  float: right;
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+  .wrapper{
+    width: 960px;
+    margin: 0 auto;
+  }
+  #selection{
+    padding: 0 25px;
+    margin: 0;
+    h3{
+      font-size: 15px;
+      padding-left: 15%;
+
+    }
+    section{
+      width: 100%;
+      img{
+        margin-top: 20%;
+      }
+      h2{
+        font-size: 35px;
+        span{
+          font-size: 50px;
+        }
+      }
+      p{
+        font-size: 20px;
+      }
+      div{
+        border-width: 3px;
+        height: 30px;
+        text-align: center;
+        margin: 0 auto;
+        a{
+          font-size: 20px;
+          margin:0 23%;
+        }
+      }
+    }
+  }
+  .aboutMe{
+    border-width: 3px;
+    width: 60px;
+    height: auto;
+    margin-top: -50px;
+    margin-right: 100px;
+    a {
+      font-size: 15px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+
+  }
+
+
+  footer{
+    a{
+      display: none;
+    }
+  }
+  div{
+    display: block;
+    width: 100%;
+    margin: 0 36%;
+    ul {
+      list-style-type : none;
+
+      li{
+        display : inline;
+        a{
+          padding-left: 10px;
+          display:inline-block;
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:640px){
+  .wrapper{
+    width: 640px;
+    margin: 0 auto;
+  }
+  #selection{
+    padding: 0;
+    margin: 0;
+    h3{
+      font-size: 25px;
+      padding-left: 95px;
+
+    }
+    section{
+      width: 100%;
+      position: static;
+      img{
+        margin-top: 17%;
+      }
+      h2{
+        font-size: 25px;
+        span{
+          font-size: 40px;
+        }
+      }
+      p{
+        font-size: 20px;
+      }
+      div{
+        border-width: 3px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        a{
+          font-size: 20px;
+          margin: 5% 23%;
+        }
+      }
+    }
+  }
+  .aboutMe{
+    border-width: 3px;
+    width: 80px;
+    height: auto;
+    margin-top: -80px;
+    a {
+      font-size: 20px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+
+  }
+
+#designerSide{
+
+}
+  footer{
+    a{
+      display: none;
+    }
+  }
+    div{
+    display: block;
+
+    ul {
+      list-style-type : none;
+      li{
+        display : inline;
+          a{
+          padding-right: 10px;
+          display: block;
+
+        }
+      }
+    }
+  }
+}
