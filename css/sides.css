@@ -1,0 +1,192 @@
+#selection {
+  padding: 0 135px; }
+  #selection h3 {
+    font-size: 35px; }
+  #selection div {
+    position: relative; }
+  #selection section {
+    width: 50%;
+    height: 820px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative; }
+    #selection section img {
+      width: 85px;
+      height: auto;
+      margin-top: 40%; }
+    #selection section h2 {
+      margin: 0; }
+      #selection section h2 span {
+        font-size: 65px; }
+    #selection section p {
+      font-size: 20px; }
+    #selection section div {
+      border: 5px solid;
+      padding: 15px;
+      text-align: center;
+      width: 300px;
+      height: 50px;
+      margin-left: 25%; }
+      #selection section div a {
+        text-decoration: none;
+        font-size: 35px;
+        margin: 0 11px; }
+
+.aboutMe {
+  width: 200px;
+  height: 50px;
+  border: 5px solid #f8b715;
+  padding: 15px;
+  font-size: 35px;
+  text-align: center;
+  float: right;
+  margin-top: -138px; }
+  .aboutMe a {
+    text-decoration: none;
+    color: #f8b715;
+    margin: 0 32px; }
+
+#designerSide {
+  background-color: #7a3866;
+  color: #f8b715;
+  float: left; }
+  #designerSide div {
+    border-color: #f8b715; }
+    #designerSide div a {
+      color: #f8b715; }
+
+#developerSide {
+  background-color: #b4dfdf;
+  color: #ef4c30;
+  float: right; }
+  #developerSide div {
+    border-color: #ef4c30; }
+    #developerSide div a {
+      color: #ef4c30; }
+
+footer {
+  padding: 20px 135px 80px;
+  clear: both; }
+  footer div ul {
+    list-style-type: none; }
+    footer div ul li {
+      display: inline; }
+      footer div ul li a {
+        padding-right: 10px; }
+  footer a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #7a3866;
+    float: right; }
+
+a:first-child {
+  float: left; }
+
+a:nth-child(2) {
+  float: right; }
+
+@media only screen and (max-width: 960px) {
+  #selection {
+    padding: 0 25px;
+    margin: 0; }
+    #selection h3 {
+      font-size: 15px;
+      padding-left: 15%; }
+    #selection section {
+      width: 100%; }
+      #selection section img {
+        margin-top: 20%; }
+      #selection section h2 {
+        font-size: 35px; }
+        #selection section h2 span {
+          font-size: 50px; }
+      #selection section p {
+        font-size: 20px; }
+      #selection section div {
+        border-width: 3px;
+        height: 30px;
+        text-align: center;
+        margin: 0 auto; }
+        #selection section div a {
+          font-size: 20px;
+          margin: 0 23%; }
+
+  .aboutMe {
+    border-width: 3px;
+    width: 60px;
+    height: auto;
+    margin-top: -50px;
+    margin-right: 100px; }
+    .aboutMe a {
+      font-size: 15px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center; }
+
+  footer a {
+    display: none; }
+
+  div {
+    display: block;
+    width: 100%;
+    margin: 0 36%; }
+    div ul {
+      list-style-type: none; }
+      div ul li {
+        display: inline; }
+        div ul li a {
+          padding-left: 10px;
+          display: inline-block; } }
+@media only screen and (max-width: 640px) {
+  #selection {
+    padding: 0;
+    margin: 0; }
+    #selection h3 {
+      font-size: 25px;
+      padding-left: 95px; }
+    #selection section {
+      width: 100%;
+      position: static; }
+      #selection section img {
+        margin-top: 17%; }
+      #selection section h2 {
+        font-size: 25px; }
+        #selection section h2 span {
+          font-size: 40px; }
+      #selection section p {
+        font-size: 20px; }
+      #selection section div {
+        border-width: 3px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto; }
+        #selection section div a {
+          font-size: 20px;
+          margin: 5% 23%; }
+
+  .aboutMe {
+    border-width: 3px;
+    width: 80px;
+    height: auto;
+    margin-top: -80px; }
+    .aboutMe a {
+      font-size: 20px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center; }
+
+  footer a {
+    display: none; }
+
+  div {
+    display: block; }
+    div ul {
+      list-style-type: none; }
+      div ul li {
+        display: inline; }
+        div ul li a {
+          padding-right: 10px;
+          display: block; } }
+
+/*# sourceMappingURL=sides.css.map */
