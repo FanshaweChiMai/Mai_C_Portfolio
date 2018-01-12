@@ -7,14 +7,14 @@ function redirect_to(){
   }
 }
 
-//order matters, it doesn't care what's named
-  function submitMessage($name, $email, $message,$direct){
-    //send info to your email, gmail not recommended
-    $to = "youraddress@yoururl.com";
+
+  function submitMessage($name, $company, $email, $phone, $message, $direct){
+
+    $to = "mai.chi@chimai.ca";
     $subj = "Message from customer submitted via site.com";
     $extra = "Reply-to:".$email;
     $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nComments: ".$message;
-    //mail($to,$subj,$msg,$extra);
+    mail($to,$subj,$msg,$extra);
     $direct = $direct."?name={$name}";
     redirect_to($direct);
   }

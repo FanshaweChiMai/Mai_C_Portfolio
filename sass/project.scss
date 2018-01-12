@@ -25,6 +25,16 @@ body{
 
 
 }
+
+#designTopCover{
+  background: linear-gradient(#000, $darkviolet);
+}
+
+#developTopCover{
+  background: linear-gradient(#000, $skyblue);
+}
+
+/*
 #sushiBe{
   background: url(../images/design/sushi-1.jpg) no-repeat center fixed;
  @include backgroundImgcover (100%);
@@ -68,12 +78,13 @@ body{
 #litbooks{
   background: url(../images/develop/lit_0.jpg) no-repeat center fixed;
  @include backgroundImgcover (100%);
-}
+}*/
 
 header{
   width: 100%;
   height: 470px;
   padding: 15px 135px 0;
+
   div{
     a{
       color:#fff;
@@ -115,7 +126,7 @@ p{
   font-size: 25px;
   height: auto;
   span{
-    font-family: 'metropolisextra_bold';
+    font-family: $boldtitle;
 
   }
 }
@@ -144,6 +155,7 @@ p{
 footer{
   width: 100%;
   height: auto;
+  padding-top: 30px;
   a{
     font-size: 25px;
     color: #000;
@@ -171,6 +183,139 @@ footer{
       li{
         display: inline-block;
       }
+    }
+  }
+}
+
+@media only screen and (max-width:960px){
+  .wrapper{
+  width: 960px;
+  margin: 0 auto;
+  }
+  header{
+  padding: 0;
+  margin: 0 5%;
+    div{
+      width: 100%;
+      position: inherit;
+      a:first-child{
+        float:left;
+        padding-left: 35px
+      }
+      a:nth-child(2){
+        float: right;
+        padding-right: 35px;
+      }
+    }
+    .left{
+
+    }
+    .right{
+    padding-right: 0;
+      }
+    a{
+      img{
+        margin-left: 35px;
+      }
+    }
+  }
+  .client{
+    width: 100%;
+  }
+  .projectDesc{
+    width: 100%;
+  }
+
+  #projectGallery{
+    img{
+      width: 100%;
+    }
+  }
+  footer{
+    div{
+      ul{
+        li{
+          a{
+            img{
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+    a{
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width:640px){
+  .wrapper{
+  width: 640px;
+  margin: 0 auto;
+  }
+  header{
+  padding: 0;
+  margin: 0 5%;
+    div{
+      width: 100%;
+      position: inherit;
+      a:first-child{
+        float:left;
+        padding-left: 35px
+      }
+      a:nth-child(2){
+        float: right;
+        padding-right: 35px;
+      }
+    }
+    .left{
+
+    }
+    .right{
+    padding-right: 0;
+      }
+    a{
+      img{
+        margin-left: 35px;
+      }
+    }
+  }
+  .client{
+    width: 100%;
+    a{
+      font-size: 25px;
+    }
+
+  }
+  .projectDesc{
+    width: 100%;
+    a{
+          font-size: 25px;
+    }
+
+  }
+
+  #projectGallery{
+    img{
+      width: 100%;
+      padding: 0;
+    }
+  }
+  footer{
+    div{
+      ul{
+        li{
+          a{
+            img{
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    a{
+      font-size: 25px;
     }
   }
 }

@@ -17,7 +17,7 @@ body{
   background-color: #fff;
 }
 #designHeader{
-  background-color: $darkviolet;
+  background: linear-gradient(#000, $darkviolet);
   height: 137px;
   width: 100%;
   a{img{
@@ -39,15 +39,15 @@ section{
 }
 
 #developHeader{
-  background-color: $skyblue;
+  background: linear-gradient(#000, $skyblue);
   width: 100%;
   height: 137px;
-  img{
+  a{img{
     width: 120px;
     height: auto;
     float:left;
     padding: 15px;
-  }
+  }}
   h1{
     margin: 5% 15%;
     position: absolute;
@@ -162,84 +162,23 @@ a{
   display:none;
 }
 
-@media only screen and (max-width:640px){
-  .wrapper{
-    width:640px;
-    margin: 0 auto;
-  }
-  .hiddenSmall{
-    display: none;
-  }
-header{
-    a{
-      width:100%;
-      img{
-        padding:0;
-      }
-    }
-    h1{
-     padding: 0;
-      width: 100%;
-      text-align: center;
-    }
-    }
-    .hiddenLarge{
-      display:block;
-      width:100%;
-      text-align: center;
-      padding: 15px 0;
-    }
-    #projectList{
-      display: none;
-    }
-    #projectImg{
-      width: 100%;
-     a{
-       width: 100%;
-       img{
-          width: 100%;
-        }
-     }
-    }
-    footer {
-      width: 640px;
-      padding: 0;
-      margin: 0;
-      a{
-        margin-top: 5%;
-        font-size: 25px;
-      }
-      div{
-        ul{
-          li{
-            a{
-              img{
-                width: 30px;
-                padding: 0;
-
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
 @media only screen and (max-width:960px){
   .wrapper{
     width:960px;
     margin: 0 auto;
   }
+
   .hiddenSmall{
     display: none;
   }
+
   header{
     padding:0 20px;
     a{
       width:100%;
       img{
         padding:0;
-
         width: 80px;
       }
     }
@@ -263,14 +202,79 @@ header{
      a{
        img{
           width: 100%;
+          padding: 15px;
         }
        }
       }
     footer {
       width: 100%;
-
+      padding: 20px;
       a{
         margin-top: 5%;
       }
     }
 }
+
+@media only screen and (max-width:640px){
+  .wrapper{
+    width:640px;
+    margin: 0 auto;
+  }
+  .hiddenSmall{
+    display: none;
+  }
+header{
+  width: 100%;
+    a{
+      width:100%;
+      img{
+        padding:0;
+      }
+    }
+    h1{
+     padding-left: 60px;
+      width: 100%;
+      text-align: left;
+    }
+    }
+
+    .hiddenLarge{
+      display:block;
+      width:100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+    #projectList{
+      display: none;
+    }
+    #projectImg{
+      width: 100%;
+     a{
+       img{
+          width: 500px;
+        }
+     }
+    }
+    footer {
+      width: 100%;
+      margin: 0;
+
+      a{
+        margin-top: 5%;
+        font-size: 25px;
+      }
+      div{
+        ul{
+          li{
+            a{
+              img{
+                width: 30px;
+                padding: 0;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }

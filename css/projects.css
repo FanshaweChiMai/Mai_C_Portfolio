@@ -2,7 +2,7 @@ body {
   background-color: #fff; }
 
 #designHeader {
-  background-color: #7a3866;
+  background: linear-gradient(#000, #7a3866);
   height: 137px;
   width: 100%; }
   #designHeader a img {
@@ -20,10 +20,10 @@ section {
   margin-top: -10px; }
 
 #developHeader {
-  background-color: #b4dfdf;
+  background: linear-gradient(#000, #b4dfdf);
   width: 100%;
   height: 137px; }
-  #developHeader img {
+  #developHeader a img {
     width: 120px;
     height: auto;
     float: left;
@@ -111,49 +111,6 @@ section {
 .hiddenLarge {
   display: none; }
 
-@media only screen and (max-width: 640px) {
-  .wrapper {
-    width: 640px;
-    margin: 0 auto; }
-
-  .hiddenSmall {
-    display: none; }
-
-  header a {
-    width: 100%; }
-    header a img {
-      padding: 0; }
-  header h1 {
-    padding: 0;
-    width: 100%;
-    text-align: center; }
-
-  .hiddenLarge {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 15px 0; }
-
-  #projectList {
-    display: none; }
-
-  #projectImg {
-    width: 100%; }
-    #projectImg a {
-      width: 100%; }
-      #projectImg a img {
-        width: 100%; }
-
-  footer {
-    width: 640px;
-    padding: 0;
-    margin: 0; }
-    footer a {
-      margin-top: 5%;
-      font-size: 25px; }
-    footer div ul li a img {
-      width: 30px;
-      padding: 0; } }
 @media only screen and (max-width: 960px) {
   .wrapper {
     width: 960px;
@@ -186,11 +143,55 @@ section {
   #projectImg {
     width: 100%; }
     #projectImg a img {
-      width: 100%; }
+      width: 100%;
+      padding: 15px; }
 
   footer {
-    width: 100%; }
+    width: 100%;
+    padding: 20px; }
     footer a {
       margin-top: 5%; } }
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    width: 640px;
+    margin: 0 auto; }
+
+  .hiddenSmall {
+    display: none; }
+
+  header {
+    width: 100%; }
+    header a {
+      width: 100%; }
+      header a img {
+        padding: 0; }
+    header h1 {
+      padding-left: 60px;
+      width: 100%;
+      text-align: left; }
+
+  .hiddenLarge {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0; }
+
+  #projectList {
+    display: none; }
+
+  #projectImg {
+    width: 100%; }
+    #projectImg a img {
+      width: 500px; }
+
+  footer {
+    width: 100%;
+    margin: 0; }
+    footer a {
+      margin-top: 5%;
+      font-size: 25px; }
+    footer div ul li a img {
+      width: 30px;
+      padding: 0; } }
 
 /*# sourceMappingURL=projects.css.map */
